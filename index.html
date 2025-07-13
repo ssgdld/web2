@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portal ONG — Inicio</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header class="box">
+    <h1>Organización Sin Fines de Lucro</h1>
+  </header>
+
+  <!-- Navegación principal agregada -->
+  <nav class="box">
+    <a href="proyecto_form.html" class="btn">Registrar Proyecto</a>
+    <a href="donante_form.html" class="btn">Registrar Donante</a>
+    <a href="listados.php" class="btn">Ver Listados</a>
+    <a href="donaciones_listado.php" class="btn">Ver Donaciones</a>
+    <a href="reporte_proyectos.php" class="btn">Reporte de Proyectos</a>
+  </nav>
+
+  <!-- Proyectos Destacados -->
+  <section class="box">
+    <h2>Proyectos Destacados</h2>
+    <div class="proyectos-destacados">
+      <div class="proyecto">
+        <h3>Maratón Solidaria</h3>
+        <p>Evento deportivo para promover la actividad física y recaudar fondos para causas sociales.</p>
+        <a href="donar.php" class="btn">Donar</a>
+      </div>
+      <div class="proyecto">
+        <h3>Taller de Arte</h3>
+        <p>Espacio creativo para niños con el fin de desarrollar sus habilidades artísticas y expresión personal.</p>
+        <a href="donar.php" class="btn">Donar</a>
+      </div>
+      <div class="proyecto">
+        <h3>Feria de Comida</h3>
+        <p>Reunión gastronómica comunitaria para apoyar iniciativas sociales mediante la venta de platillos típicos.</p>
+        <a href="donar.php" class="btn">Donar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buscar y filtrar eventos -->
+  <section class="box">
+    <h2>Buscar y Filtrar Eventos</h2>
+    <form method="get" action="filtrarEventos.php" class="filtro-eventos">
+      <input type="text" name="q" placeholder="Buscar evento...">
+      <select name="tipo">
+        <option value="">— Todos los tipos —</option>
+        <option>Deportivo</option>
+        <option>Cultural</option>
+        <option>Social</option>
+      </select>
+      <button type="submit">Filtrar</button>
+    </form>
+    <div id="resultados-eventos">
+      <p><em>Los resultados se mostrarán al aplicar un filtro.</em></p>
+    </div>
+  </section>
+
+  <!-- Enlace a registro de evento -->
+  <section class="box">
+    <h2>¿Organizas un evento?</h2>
+    <a href="registrarEvento.php" class="btn">Registrar Nuevo Evento</a>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="box">
+    <p>&copy; 2025 Organización sin Fines de Lucro. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>

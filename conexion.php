@@ -20,16 +20,3 @@ try {
     error_log("Error de conexión BD: " . $e->getMessage());
     die("Error de conexión. Por favor, inténtalo más tarde.");
 }
-
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "thlWgT_6jD/Mka";
-$database = "organizacion";
-
-$conn = new mysqli($servername, $username, $password, $database);
-
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
-?>

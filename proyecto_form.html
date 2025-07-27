@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Registrar Proyecto</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <a href="index.html">← Inicio</a>
+      <a href="index.php">← Inicio</a>
     </nav>
     <section class="box">
-        <h2>Nuevo Proyecto</h2>
-        <form id="proyecto-form" action="proyecto_insert.php" method="post" novalidate>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required maxlength="100">
+      <h2>Nuevo Proyecto</h2>
+      <form
+        id="proyecto-form"
+        action="./src/php/proyecto_insert.php"
+        method="post"
+        novalidate
+      >
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required maxlength="100" />
 
-            <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion" name="descripcion" required></textarea>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea>
 
-            <label for="presupuesto">Presupuesto (USD):</label>
-            <input type="number" id="presupuesto" name="presupuesto" min="0" step="0.01" required>
+        <label for="presupuesto">Presupuesto (USD):</label>
+        <input
+          type="number"
+          id="presupuesto"
+          name="presupuesto"
+          min="0"
+          step="0.01"
+          required
+        />
 
-            <label for="fecha_inicio">Fecha Inicio:</label>
-            <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+        <label for="fecha_inicio">Fecha Inicio:</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio" required />
 
-            <label for="fecha_fin">Fecha Fin (opcional):</label>
-            <input type="date" id="fecha_fin" name="fecha_fin">
+        <label for="fecha_fin">Fecha Fin (opcional):</label>
+        <input type="date" id="fecha_fin" name="fecha_fin" />
 
-            <button type="submit">Guardar Proyecto</button>
-        </form>
+        <button type="submit">Guardar Proyecto</button>
+      </form>
     </section>
     <script>
-        document.getElementById('proyecto-form').addEventListener('submit', function (e) {
-            const ini = document.getElementById('fecha_inicio').value;
-            const fin = document.getElementById('fecha_fin').value;
-            if (fin && fin < ini) {
-                alert('La Fecha Fin no puede ser anterior a la Fecha Inicio.');
-                e.preventDefault();
-            }
+      document
+        .getElementById("proyecto-form")
+        .addEventListener("submit", function (e) {
+          const ini = document.getElementById("fecha_inicio").value;
+          const fin = document.getElementById("fecha_fin").value;
+          if (fin && fin < ini) {
+            alert("La Fecha Fin no puede ser anterior a la Fecha Inicio.");
+            e.preventDefault();
+          }
         });
     </script>
-</body>
-
+  </body>
 </html>

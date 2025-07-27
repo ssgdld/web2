@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Portal ONG — Inicio</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
@@ -17,9 +17,9 @@
   <nav class="box">
     <a href="proyecto_form.html" class="btn">Registrar Proyecto</a>
     <a href="donante_form.html" class="btn">Registrar Donante</a>
-    <a href="listados.php" class="btn">Ver Listados</a>
-    <a href="donaciones_listado.php" class="btn">Ver Donaciones</a>
-    <a href="reporte_proyectos.php" class="btn">Reporte de Proyectos</a>
+    <a href="./src/php/listados.php" class="btn">Ver Listados</a>
+    <a href="./src/php/donaciones_listado.php" class="btn">Ver Donaciones</a>
+    <a href="./src/php/reporte_proyectos.php" class="btn">Reporte de Proyectos</a>
   </nav>
 
   <!-- Proyectos Destacados -->
@@ -29,17 +29,17 @@
       <div class="proyecto">
         <h3>Maratón Solidaria</h3>
         <p>Evento deportivo para promover la actividad física y recaudar fondos para causas sociales.</p>
-        <a href="donar.php" class="btn">Donar</a>
+        <a href="./src/php/donar.php" class="btn">Donar</a>
       </div>
       <div class="proyecto">
         <h3>Taller de Arte</h3>
         <p>Espacio creativo para niños con el fin de desarrollar sus habilidades artísticas y expresión personal.</p>
-        <a href="donar.php" class="btn">Donar</a>
+        <a href="./src/php/donar.php" class="btn">Donar</a>
       </div>
       <div class="proyecto">
         <h3>Feria de Comida</h3>
         <p>Reunión gastronómica comunitaria para apoyar iniciativas sociales mediante la venta de platillos típicos.</p>
-        <a href="donar.php" class="btn">Donar</a>
+        <a href="./src/php/donar.php" class="btn">Donar</a>
       </div>
     </div>
   </section>
@@ -47,7 +47,7 @@
   <!-- Buscar y filtrar eventos -->
   <section class="box">
     <h2>Buscar y Filtrar Eventos</h2>
-    <form method="get" action="filtrarEventos.php" class="filtro-eventos">
+    <form method="get" action="./src/php/filtrarEventos.php" class="filtro-eventos">
       <input type="text" name="q" placeholder="Buscar evento...">
       <select name="tipo">
         <option value="">— Todos los tipos —</option>
@@ -65,7 +65,7 @@
   <!-- Enlace a registro de evento -->
   <section class="box">
     <h2>¿Organizas un evento?</h2>
-    <a href="registrarEvento.php" class="btn">Registrar Nuevo Evento</a>
+    <a href="./src/php/registrarEvento.php" class="btn">Registrar Nuevo Evento</a>
   </section>
 
   <!-- Pie de página -->

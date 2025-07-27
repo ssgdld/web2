@@ -19,12 +19,12 @@ $resultados = $pdo->query($sql)->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>Proyectos con Alta Participación</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 
 <body>
     <nav>
-        <a href="index.html">← Inicio</a>
+        <a href="../../index.php">← Inicio</a>
     </nav>
     <section class="box">
         <h2>Proyectos con más de 2 donaciones</h2>

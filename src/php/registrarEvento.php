@@ -2,16 +2,18 @@
 require_once 'session_config.php';
 
 if (empty($_SESSION['csrf_token'])) {
-    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+  $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Registrar Evento</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="../../css/estilos.css">
 </head>
+
 <body>
   <section class="box">
     <h2>Registrar Nuevo Evento</h2>
@@ -42,4 +44,5 @@ if (empty($_SESSION['csrf_token'])) {
     </form>
   </section>
 </body>
+
 </html>

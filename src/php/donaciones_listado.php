@@ -16,12 +16,12 @@ $donaciones = $pdo->query($sql)->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>Listado de Donaciones</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 
 <body>
     <nav>
-        <a href="index.html">← Inicio</a>
+        <a href="../../index.php">← Inicio</a>
     </nav>
     <section class="box">
         <h2>Donaciones Registradas (Total: <?= count($donaciones) ?>)</h2>

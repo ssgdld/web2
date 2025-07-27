@@ -5,7 +5,7 @@ $host = 'localhost';
 $port = 3306;
 $dbname = 'ORGANIZACION';
 $user = 'root';
-$password = '';
+$password = 'thlWgT_6jD/Mka';
 
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

@@ -10,7 +10,7 @@ if (empty($_SESSION['csrf_token'])) {
 <head>
   <meta charset="UTF-8">
   <title>Donar — ONG Ejemplo</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
 
@@ -31,7 +31,7 @@ if (empty($_SESSION['csrf_token'])) {
     </form>
   </section>
 
-  <script type="module" src="notifications.js"></script>
+  <script type="module" src="../js/notifications.js"></script>
 
   <!-- 🔁 Script de ping automático -->
   <script>

@@ -210,3 +210,13 @@ section.box ul {
 section.box ul li {
   margin-bottom: 6px;
 }
+
+/* Notificación de resultado */
+.notification {
+  background: #e0f7fa;
+  border-left: 4px solid #007bff;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  color: #004d40;
+}

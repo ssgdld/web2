@@ -10,12 +10,12 @@ $donantes = $pdo->query("SELECT * FROM DONANTE")->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>Listados</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 
 <body>
     <nav>
-        <a href="index.html">← Inicio</a>
+        <a href="../../index.php">← Inicio</a>
     </nav>
     <section class="box">
         <h2>Proyectos Registrados</h2>

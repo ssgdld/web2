@@ -19,6 +19,7 @@
     <a href="donante_form.html" class="btn">Registrar Donante</a>
     <a href="./src/php/listados.php" class="btn">Ver Listados</a>
     <a href="./src/php/donaciones_listado.php" class="btn">Ver Donaciones</a>
+    <a href="./src/php/donaciones.php" class="btn">Realizar Donación</a>
     <a href="./src/php/reporte_proyectos.php" class="btn">Reporte de Proyectos</a>
   </nav>
 
@@ -29,17 +30,17 @@
       <div class="proyecto">
         <h3>Maratón Solidaria</h3>
         <p>Evento deportivo para promover la actividad física y recaudar fondos para causas sociales.</p>
-        <a href="./src/php/donar.php" class="btn">Donar</a>
+        <a href="./src/php/donaciones.php" class="btn">Donar</a>
       </div>
       <div class="proyecto">
         <h3>Taller de Arte</h3>
         <p>Espacio creativo para niños con el fin de desarrollar sus habilidades artísticas y expresión personal.</p>
-        <a href="./src/php/donar.php" class="btn">Donar</a>
+        <a href="./src/php/donaciones.php" class="btn">Donar</a>
       </div>
       <div class="proyecto">
         <h3>Feria de Comida</h3>
         <p>Reunión gastronómica comunitaria para apoyar iniciativas sociales mediante la venta de platillos típicos.</p>
-        <a href="./src/php/donar.php" class="btn">Donar</a>
+        <a href="./src/php/donaciones.php" class="btn">Donar</a>
       </div>
     </div>
   </section>
